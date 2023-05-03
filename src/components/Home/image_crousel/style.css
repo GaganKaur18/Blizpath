@@ -1,0 +1,148 @@
+.tag {
+    text-align: center;
+}
+  
+.slick-slide img {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 800px;
+}
+.imgslider{
+    overflow: hidden;
+    margin-top: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.slick-dots{
+    /* background-color: white; */
+    /* lighting-color: white; */
+    top:750px;
+    color:white
+}
+.slack-track{
+    max-width: 100%;
+}
+
+.front_content{
+    position: absolute;
+    top: 17%;
+    left: 12%;
+    z-index: 2000;
+}
+.front_title{
+    width: 42%;
+}
+.front_content .front_title h1{
+    color: rgb(175, 173, 173);
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
+    font-size: 40px;
+    width: 100%;
+    animation: text_animation 5s  ease-out forwards;
+    /* animation-delay: 5s; */
+    
+}
+@keyframes text_animation {
+    0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.Front_p{
+    width: 42%;
+    color: white;
+    font-size: 24px;
+}
+.Front_p p{
+    /* display: none; */
+    animation: p_animation 5s ease-out;
+    /* animation-delay: 15s; */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@keyframes p_animation {
+    0% {
+    /* display: block; */
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.front_underline{
+    /* padding: 1px; */
+    border: 2px solid  rgb(14 122 185 / 96%);
+    animation: animate 5s linear forwards;
+}
+/* Open Sans" - 400 */
+@keyframes animate {
+    0%{
+        width:0%
+    }
+    10%{
+        width:10%
+    }
+    25%{
+        width:25%
+    }
+    50%{
+        width:50%
+    }
+    75%{
+        width:75%
+    }
+    100%{
+        width:100%
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .front_content{
+        position: absolute;
+        top: 11%;
+    
+        z-index: 2000;
+    }
+    .front_title{
+        width: 23%;
+    }
+    .front_content .front_title h1{
+      
+        font-size: 30px;
+      
+        /* animation-delay: 5s; */
+        
+    }
+    .Front_p{
+        width: 27%;
+        color: white;
+        font-size: 20px;
+    }
+    .slick-slide img {
+        max-height: 330px;
+
+    }
+}

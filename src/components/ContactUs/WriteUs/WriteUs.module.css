@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  margin: 7vw 0;
+  /* margin-top: 30px; */
+}
+.heading {
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.left p {
+  font-size: 1.2rem;
+}
+.wrapper {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+.left,
+.right {
+  flex: 1;
+}
+.right{
+  margin-top: 30px;
+}
+.formWrapper {
+  width: 75%;
+  margin: auto;
+}
+form {
+  color: white;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.inputDisplayBlock {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.formWrapper label {
+  font-size: 1.2rem;
+}
+.formWrapper input,
+.inputDisplayBlock textArea {
+  font-size: 1.2rem;
+  padding: 1rem 0.2rem;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #ffffff60;
+  outline: none;
+}
+.formWrapper input:focus,
+.formWrapper input:hover,
+.inputDisplayBlock textArea:focus,
+.inputDisplayBlock textArea:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.checkbox input {
+  border: 2px solid #fff;
+  background: transparent;
+  background: red;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+  border: none;
+}
+button {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  border: 1px solid white;
+  background-color: #0a5c97;
+  cursor: pointer;
+  height: 3.5rem;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  margin: 1.8rem 0rem;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: transform .3s ease-out, background-color .3s, box-shadow .4s, -webkit-transform .3s ease-out;
+}
+
+button:hover{
+  background-color: black;
+  color: #0a5c97;
+  border:  1px solid #0a5c97;
+  transform: scale(1.1);
+}
+
+ .logo{
+  width: 100%;
+  margin-top : 50px;
+ }
+ .logo img{
+  width: 70%;
+    height: 100%;
+    margin: 0px 75px;
+ }
+
+ @media screen and (max-width:450px) {
+  .container{
+    margin: 0;
+  }
+  .wrapper{
+    width: 80%;
+    display: block;
+  }
+  .logo img{
+      margin: 0px 39px;
+   }
+  .heading {
+  
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .left{
+    margin-bottom: 80px;
+  }
+  .left p {
+    font-size: 1.1rem;
+    padding-top: 5px;
+  }
+  .formWrapper {
+  
+    width: 90%;
+    margin: auto;
+  }
+  .name {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .formWrapper label {
+    font-size: 1.1rem;
+  }
+  .formWrapper input,
+.inputDisplayBlock textArea {
+  font-size: 1.1rem;
+ 
+  
+}
+.formWrapper:last-child{}
+button {
+
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+ }

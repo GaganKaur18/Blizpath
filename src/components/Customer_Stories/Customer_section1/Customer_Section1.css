@@ -1,0 +1,153 @@
+.Customer_Container{
+    width: 100%;
+    max-height: 800px;
+    display: flex;
+}
+
+.Customer_Image{
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+}
+
+.Customer_Container .Customer_Image img{
+   width: 100%;
+   max-height: 700px;
+   opacity: 1;
+}
+.stories_heading {
+    text-align: center;
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+}
+.stories_heading h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.Customer_provide{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 20px 0px;
+}
+.title1{
+    width: 100%;
+
+}
+.Customer_content p{
+    text-align: left;
+}
+
+
+
+.Customer_title{
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    text-align: left;
+}
+.Customer_title h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    
+}
+.Customer_box{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.Customer_box_image{
+    width:50%;
+    height: 100%;
+
+
+}
+.Customer_box_image img{
+    width: 90%;
+    height: 500px;
+    margin: 17px 38px;
+}
+
+.Customer_box_content{
+    width: 50%;
+}
+.Customer_content{
+    color: white;
+
+}
+.Customer_content p{
+    text-align: left;
+    font-size: 19px;
+    line-height: 1.7rem;
+    letter-spacing: 1.2px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+}
+.Customer_content ul{
+    margin: 0px 35px;
+}
+.Customer_content ul li{
+    font-size: 16px;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 450px){
+    .Customer_box{
+        flex-direction: column;
+    }
+    .box2{
+        flex-direction: column-reverse;
+
+    }
+    .Customer_provide{
+        margin-top: 20px;
+    }
+    .Customer_box_image{
+        width: 290px;
+       
+    }
+    .Customer_box_image img{
+        height: 280px;
+        width: 100%;
+    }
+    .stories_heading{
+        display: block;
+    }
+    .stories_heading h1{
+        color: white;
+    }
+    .Customer_box_content{
+        width : 90%;
+        margin:  0 auto;
+    }
+    .Customer_content p{
+        font-size: 12px;
+        line-height: 1.2rem;
+        letter-spacing: 0.7px;
+        text-align: center;
+    }
+    .Customer_title h1{
+    font-size: 14.5px;
+    text-align: center;
+   }
+   .Customer_Container .Customer_Image img{
+    width: 100%;
+    max-height: 800px;
+    height: 330px;
+    opacity: 1;
+ }
+  
+ 
+
+}

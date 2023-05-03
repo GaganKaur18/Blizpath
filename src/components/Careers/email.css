@@ -1,0 +1,112 @@
+form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin : 0 auto;
+    font-size: 20px;
+    
+    
+    }
+    form input {
+        width: 98%;
+        height: 35px;
+        margin-bottom:15px;
+        padding: 7px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid rgb(220, 220, 220);
+        font-size:18px;
+        
+       
+        }
+    .form_container{
+        background-color: #46a7b0;
+    }
+    /* form input:focus{
+       
+            border: 2px solid rgba(0, 206, 158, 1);
+    } */
+    .image{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .image img{
+      width:100%;
+      height:400px;
+      opacity:1;
+    }
+    textarea {
+      max-width: 100%;
+      min-width: 98%;
+      width: 98%;
+      max-height: 100px;
+      min-height: 100px;
+      padding: 3px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid rgb(220, 220, 220);
+
+    }
+    textarea:focus {
+      border: 2px solid rgba(0, 206, 158, 1);
+    }
+
+    label {
+      margin: 0.5rem 0rem;
+
+      color: white;
+    }
+    
+    input[type="submit"] {
+      margin-top: 2rem;
+      cursor: pointer;
+      height:50px;
+      font-size:26px;
+      width:100%;
+      background: #b02024;
+      color: white;
+      border: none;
+      padding:7px;
+    transition: transform .3s ease-out,background-color .3s,box-shadow .4s,-webkit-transform .3s ease-out;
+
+    }
+    input[type="submit"]:hover {
+      background-color: white;
+      color: #b02024;
+   /* box-shadow:0px 30px 33px -7px #444343; */
+      border: 1px solid #b02024;
+      /* border-color: #b02024; */
+    }
+    .dropdown{
+      font-size: 18px;
+      width: 101%;
+      height: 46px;
+      margin-bottom: 15px;
+      padding: 3px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+option{
+  height:50px;
+  border-radius:5px
+}
+.form_control{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+@media screen and (max-width:450px) {
+    .image{
+        width: 100%;
+    }
+    .form_control{
+        width: 80%;
+    }
+    .dropdown{
+        width: 103%;
+    }
+}

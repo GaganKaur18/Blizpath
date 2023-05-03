@@ -1,0 +1,8 @@
+div.card_container{
+    max-width: 100px;
+    height: 325px;
+    max-height: 100px;
+    border-radius: 8%;
+    border: 1px solid white;
+    margin: 0 auto;
+}

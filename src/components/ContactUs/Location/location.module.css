@@ -1,0 +1,182 @@
+.container {
+  width: 70%;
+  margin: auto;
+  color: #fff;
+}
+.wrapper {
+  display: flex;
+}
+.location_title{
+  position: relative;
+  top: 2%;
+}
+.content,
+.pictures {
+  flex: 1;
+}
+.heading {
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 7rem;
+}
+.content p {
+  width: 80%;
+  font-size: 1.2rem;
+}
+/* .pictures { */
+  /* border: 1px solid white; */
+/* } */
+.pictures img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 8px;
+}
+.Locations {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  align-items: left;
+  column-gap: 2rem;
+  /* margin: 3rem 0; */
+  /* border: 1px solid white; */
+}
+.addresses {
+  width: 54%;
+  height: 250px;
+  transition: transform .3s ease-out,background-color .3s,box-shadow .4s,-webkit-transform .3s ease-out;
+  border: 1px groove white;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.05);
+  margin-bottom: 40px;
+  padding: 0px 5px;
+  
+}
+.abc img {
+ height: 16rem;
+ width: 30rem;
+ border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+ 
+
+.abc{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.Locations h2{
+  font-size: 28px;
+}
+.Locations p{
+  width: 96%;
+}
+.Locations h2,
+.Locations p {
+  margin: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 1.2px;
+}
+.Locations div:nth-child(3n) {
+  text-align: left;
+  
+  
+}
+.Locations div:nth-child(3n+1) {
+  text-align: left;
+  
+}
+
+.location_container{
+  display: flex;
+
+}
+
+.location_container .location_image img{
+  width: 30px;
+  height: 30px;
+  padding: 15px 0px;
+}
+.addresses:hover{
+  transform: scale(1.1);
+
+}
+
+.emailLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.emailLink:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:450px) {
+  .wrapper{
+  flex-direction: column-reverse;
+  gap: 20px ;
+   /* display:block; */
+  }
+  .container{
+    margin: 50px 0px;
+    width: 100%;
+  }
+  .heading{
+    position: absolute;
+    top: -5%;
+    padding: 20px;
+  }
+  .content{
+    flex: 1;
+    width: 100%;
+    /* height: 50rem; */
+  }
+
+/*  
+  .location_title{ */
+   
+    /* margin-bottom: 0; */
+  
+  /* } */
+  .pictures img{
+    height: 500px;
+    /* position: absolute; */
+    top: 10%;
+  }
+  .heading{
+    font-size: 2rem;
+  }
+  .content p{
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 7px;
+  }
+ 
+  .addresses{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .Locations h2{
+    font-size: 25px;
+  }
+.Locations p {
+  margin-top: 0.7rem;
+  line-height: 1.3rem;
+  letter-spacing: 1.2px;
+}
+.location_container .location_image img{
+  width: 25px;
+  height: 25px;
+
+}
+
+}

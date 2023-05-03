@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  /* font-family: "Open Sans", sans-serif; */
+  /* overflow: hidden; */
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 100px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (max-width: 450px) {
+  body{
+    margin-top: 40px;
+   
+  }
+}

@@ -1,0 +1,218 @@
+.careercontainer{
+    width: 100%;
+    color: white;
+}
+
+.career_heading{
+    animation: p_animation 3s ease-out;
+}
+
+.careercontainer .career_image {
+    width: 100%;
+    height: 680px;
+    margin-bottom: 100px;
+}
+.careercontainer .career_image img{
+    width: 100%;
+    height: 650px;
+    opacity: 1;
+}
+.title_career{
+    width: 45%;
+    position: absolute;
+    top:30%;
+    right:5%;
+}
+.career_heading2{
+  display: none;
+}
+.title_career h1{
+    font-size: 30px;
+    color: rgb(226, 222, 222);;
+    font-weight: 300;
+}
+.title_career span {
+   
+    background: linear-gradient(to right, hsl(244, 70%, 46%) 0, hsl(0, 0%, 100%) 10%, hsl(244, 70%, 46%) 20%);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+  @keyframes p_animation {
+    0% {
+    /* display: block; */
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.vacancies{
+    width: 80%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.vacancies .vacancies_heading{
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+}
+.vacancies .vacancies_heading h1{
+    font-size: 48px;
+    line-height: 1.5rem;
+    padding: 20px 0px;
+}
+
+.Card{
+
+    display: grid;
+    gap: 12%;
+    /* height:100%; */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin: 100px 0px
+    
+    
+    }
+/* .star{
+    background-image: url("../../images/star.jpg") ;
+
+} */
+.job_container{
+    width: 60%;
+    height: 100%;
+    color: white;
+    margin: 100px auto ;
+    padding: 100px auto;
+    
+}
+.job{
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(30px);
+    margin: 100px auto ;
+    border-radius: 20px;
+}
+.job_apply{
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.job_apply .apply_button button{
+    background-color: #0a5c97;
+    width: 200px;
+    transition: transform .3s ease-out,background-color .3s,box-shadow .4s,-webkit-transform .3s ease-out;
+    margin-right: 20px;
+}
+.job_title h1  {
+    padding-left: 15px;
+}
+
+.job_apply .apply_button button:hover{
+   background-color: black;
+   transform: scale(1.1);
+   color: #0a5c97;
+   /* box-shadow:0px 30px 33px -7px #444343; */
+   border-color: #0a5c97;
+}
+
+.job_container .job .job_title h1{
+    text-align: left;
+    font-size: 48px;
+}
+
+
+@media screen and (max-width:450px) {
+    .career_heading{
+        display: none;
+    }
+    .careercontainer .career_image {
+
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    .careercontainer .career_image img{
+        height: 300px;
+        /* margin-top: 150px; */
+    }
+    .title_career{
+        width: 100%;
+        position: absolute;
+        top: 27%;   
+        right: 2%;
+        justify-content: flex-end;
+        display: flex;
+
+        
+    }
+    .career_heading2{
+        display: block;
+        width: 40%;
+        text-align:center;
+    }
+   
+    .title_career h1{
+        font-size: 30px;
+        line-height: 2rem;
+        letter-spacing: 1.1px;
+        color: #0f75bc;
+        font-weight: bold;
+        /* font-family: 'Raleway', sans-serif; */
+        
+    }
+    .vacancies .vacancies_heading{
+        padding: 0;
+    }
+    .vacancies .vacancies_heading h1{
+        font-size: 36px;
+        line-height: 1.4rem;
+        
+    }
+    .Card{
+
+        display: grid;
+        gap: 4%;
+        /* height:100%; */
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin: 40px 0px
+        
+        
+        }
+    .job_apply{
+        width: 95%;
+    }
+    .job_container{
+            width: 90%;  
+        }
+    .job_apply .apply_button button{
+            width: 100%;
+            padding: 0;
+           
+    }
+    .job_title{
+        width: 70%;
+    }
+    .job_container .job .job_title h1{
+        font-size: 28px;
+        padding-left: 0;
+    }
+    .apply_button{
+        width: 30%;
+    }
+
+    
+}
+

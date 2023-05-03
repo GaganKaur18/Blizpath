@@ -1,0 +1,32 @@
+.social {
+  width: 50px;
+  position: absolute;
+  position: fixed;
+  right: 8px;
+  top: 30%;
+  z-index: 1000;
+}
+.social li a img {
+  opacity: 0.9;
+  max-width: 20px;
+  background-color: white;
+  border-radius: px;
+}
+.social li {
+  list-style: none;
+  margin: 50px 0px;
+  padding: 15px;
+}
+
+@media screen  and (max-width:450px){
+  .social{
+    top:40%;
+    right: -10px;
+    padding: 0;
+  }
+  .social li{
+    margin: 20px 0px;
+    padding:10px;
+    padding-left: 0;
+  }
+}
